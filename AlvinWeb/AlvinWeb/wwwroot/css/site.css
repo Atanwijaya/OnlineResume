@@ -1,0 +1,211 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    margin: 0;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 499px) {
+    .nav-alvin.expand {
+        max-width: 23vw;
+        min-width: 23vw !important;
+    }
+    .icon-text-alvin {
+        font-size: 17px;
+    }
+    .nav-toggler-alvin i {
+        font-size: 15px;
+    }
+    .nav-alvin .link-text-alvin, .nav-alvin.expand .link-text-alvin {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+    .nav-alvin.expand {
+        max-width: 20vw;
+        min-width: 20vw !important;
+    }
+    .icon-text-alvin {
+        font-size: 20px;
+    }
+    .nav-toggler-alvin i {
+        font-size: 18px;
+    }
+    .nav-alvin .link-text-alvin, .nav-alvin.expand .link-text-alvin {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nav-alvin.expand {
+        max-width: 11vw;
+        min-width: 11vw !important;
+    }
+    .icon-text-alvin {
+        font-size: 25px;
+    }
+
+    .nav-toggler-alvin i {
+        font-size: 21px;
+    }
+    .nav-alvin .link-text-alvin, .nav-alvin.expand .link-text-alvin {
+        font-size: 16px;
+    }
+}
+.icon-text-alvin {
+    display: block;
+}
+.nav-alvin .nav-pills .nav-link {
+    color: white;
+}
+.nav-right-toggle-alvin.hidden{
+    max-width:0px;
+}
+    .nav-right-toggle-alvin.hidden i{
+        display:none;
+    }
+    .nav-alvin .nav-pills.hidden {
+        flex: 0;
+    }
+.nav-alvin .nav-pills .nav-link.hidden {
+    opacity: 0;
+   transition:opacity 0s ease;
+}
+.nav-alvin .nav-pills {
+    flex: 1;
+    justify-content: center;
+    background-color: #6d7070;
+    align-items: center;
+    transition: flex 0.2s ease;
+}
+.nav-toggler-alvin{
+
+}
+.nav-alvin.expand .link-text-alvin {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+    .nav-alvin.expand + .nav-right-toggle-alvin i {
+        transform: rotate(180deg) !important;
+    }
+.nav-container-alvin {
+    position: fixed;
+    flex: 1 1 0%;
+    min-height: 100vh;
+    display: flex;
+}
+.nav-alvin {
+    display: flex;
+    background-color: transparent;
+    text-align: center;
+    flex-direction: column;
+    z-index: 999;
+    min-width: 1vw;
+    width: inherit;
+    transition: min-width 0.2s ease;
+}
+.nav-right-toggle-alvin {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #f8f8ff;
+    border-radius: 100px;
+    max-width: 18px;
+    width:18px;
+    margin-left: -3px;
+    transition: max-width 0.2s ease;
+    box-shadow: 2px 2px 2px grey;
+    cursor: pointer;
+}
+    .nav-right-toggle-alvin i {
+        font-size: 8px;
+        margin-left: 3px;
+        transition: transform 0.6s ease;
+        transform: rotate(0deg);
+    }
+    .nav-alvin, .content-alvin, .nav-right-toggle-alvin {
+        flex: 1 1 0%;
+    }
+.nav-toggler-alvin i {
+    color: white;
+    
+}
+.nav-alvin .nav-link {
+    margin: 8px 0px;
+    padding: 5px 5px;
+}
+.content-alvin h2 span {
+    color: rgb(211, 211, 211);
+}
+.nav-toggler-alvin {
+    padding-top: 5px;
+    z-index: 999;
+    background-color: #6d7070;
+}
+    .nav-toggler-alvin i, .nav-alvin .nav-pills .nav-link {
+        cursor: pointer;
+        -webkit-transition: color 0.2s ease, opacity 0.8s ease;
+        -moz-transition: color 0.2s ease, opacity 0.8s ease;
+        -o-transition: color 0.2s ease, opacity 0.8s ease;
+        transition: color 0.2s ease, opacity 0.8s ease;
+    }
+.child-text-title {
+    letter-spacing: 8px;
+    margin-top: -20px;
+    font-size: 14px;
+}
+.nav-alvin .nav-link.active {
+    color: #d67704 !important;
+}
+        .nav-alvin .nav-pills .nav-link{
+            background-color:transparent;
+        }
+        .nav-alvin .nav-pills .nav-link:hover, .nav-toggler-alvin i:hover {
+            color: #d67704 !important;
+        }
+    /* Carousel */
+    .carousel-caption p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+.link-text-alvin {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+}
+body {
+    font-family: Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+.content-alvin .container{
+    text-align:center;
+}
+.content-alvin h2, .content-alvin h1 {
+    font-weight: 700;
+    font-size:3rem !important;
+}
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
